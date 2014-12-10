@@ -1,8 +1,7 @@
 ----
 --If you want to create a vector line outside a building (or lets say a place visible from a bird's eye), 
---then jump to the line number __. Otherwise, if you want to use a basemap/base-image to create your vector
+--then jump to the line number 43. Otherwise, if you want to use a basemap/base-image to create your vector
 --line onto then follow from the begining.
-----
 
 --1. Open QGIS (which is belived to be installed on your system, in order to perform some initial processing).
 --This GIS Data handling and processing software is open source software and can be downloaded easily from the
@@ -40,4 +39,48 @@ Right Click the layer < Save As... < Format (GPS eXchange Format [GPX])
 --12. Leave the other fields default and save it at a safe directory.
 
 ----
---
+--In order to make a vector line (for future export as an .osm file format), you need a basemap/base-image. 
+--Follow the following steps.
+
+--1. If you want to use the OSM as your basemap then just open the OSM imagery from the top toolbar
+Imagery < OpenStreetMap (Mapnik)
+
+--2. If your base-image cannot be visible from the Bird's eye, then use the Line vector file we have created in 
+--the above section. JOSM supports very limited variety of file formats to import (mainly XML format). But we can use 
+--the .GPX file format to import our Line vector file as a base-image. Why we are importing this Line vector file is 
+--because we need a reference map to create our vector line onto using the JOSM.
+
+--3. Open the .GPX file
+File < Open... < select .GPX file
+
+--4. Create a new layer
+File < New Layer
+
+--5. One can see both the layers in the right 'Layers' panel.
+
+--6. Start editing this newly created layer by Activating it (green right tick must be visible) and selecting the 
+--'Draw nodes (A)' tool from the left panel. Just run the line on top of the base-image line (or on the road / areas of 
+--interest in case of the OSM).
+
+--7. Once done, saveas the layer in .osm file format from the rightside Layers panel.
+Right Click < Save As...
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
