@@ -1,18 +1,24 @@
 ----
---If you want to create a vector line outside a building (or lets say a place visible from a bird's eye), then jump to the line number __. Otherwise, if you want to use a basemap/base-image to create your vector line onto then follow from the begining.
+--If you want to create a vector line outside a building (or lets say a place visible from a bird's eye), 
+--then jump to the line number __. Otherwise, if you want to use a basemap/base-image to create your vector
+--line onto then follow from the begining.
 ----
 
---1. Open QGIS (which is belived to be installed on your system, in order to perform some initial processing). This GIS Data handling and processing software is open source software and can be downloaded easily from the following website:
+--1. Open QGIS (which is belived to be installed on your system, in order to perform some initial processing).
+--This GIS Data handling and processing software is open source software and can be downloaded easily from the
+--following website:
 http://www.qgis.org/en/site/forusers/download.html
 
 --2. Select the tool Georeferencer from the topmost toolbar.
 Raster < Georeferencer < Georeferencer
 
---3. Open your base-image into the newly open window (use CRS WGS84 if your coordinates are not projected) and then click on all the GCP's locations for which you know the exact lat-long.
+--3. Open your base-image into the newly open window (use CRS WGS84 if your coordinates are not projected) and
+--then click on all the GCP's locations for which you know the exact lat-long.
 
 --4. Feed the X/East/Long and Y/North/Lat values for all these points.
 
---5. In the transformation settings select the 'Polynomial 1' as the Transformation type if you have limited number of GCPs and 'Nearest Neighbour' as the Resampling method.
+--5. In the transformation settings select the 'Polynomial 1' as the Transformation type if you have limited 
+--number of GCPs and 'Nearest Neighbour' as the Resampling method.
 
 --6. Save the data in GeoTIFF format and import into the QGIS main window.
 
@@ -24,7 +30,9 @@ Layer < New < New Shapefile Layer...
 --9. Start editing this Line vector layer.
 Layers Panel < Right Click < Toggle Editing
 
---10. Select the add feature tool to add the Line features on top of your georeferenced base-image. Save it after the drawing and delete all the columns from the 'Open Attribute Table' before again selecting the 'Toggle Editing' tool in order to stop editing.
+--10. Select the add feature tool to add the Line features on top of your georeferenced base-image. Save it 
+--after the drawing and delete all the columns from the 'Open Attribute Table' before again selecting the 
+--'Toggle Editing' tool in order to stop editing.
 
 --11. Finally saveas this layer in order to make it importable for our JOSM-gui.
 Right Click the layer < Save As... < Format (GPS eXchange Format [GPX])
