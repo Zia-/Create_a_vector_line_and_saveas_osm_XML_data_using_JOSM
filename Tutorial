@@ -1,6 +1,6 @@
 ----
 --If you want to create a vector line outside a building (or lets say a place visible from a bird's eye), 
---then jump to the line number 43. Otherwise, if you want to use a basemap/base-image to create your vector
+--then jump to the line number 42. Otherwise, if you want to use a basemap/base-image to create your vector
 --line onto then follow from the begining.
 
 --1. Open QGIS (which is belived to be installed on your system, in order to perform some initial processing).
@@ -64,23 +64,3 @@ File < New Layer
 
 --7. Once done, saveas the layer in .osm file format from the rightside Layers panel.
 Right Click < Save As...
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
