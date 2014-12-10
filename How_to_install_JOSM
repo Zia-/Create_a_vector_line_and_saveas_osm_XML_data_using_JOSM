@@ -24,6 +24,7 @@ sudo apt-get remove josm josm-plugins
 
 --7. Install the JOSM:
 sudo apt-get install josm
+
 ----
 --In order to run the gui, run the following command from the terminal:
 josm
