@@ -1,0 +1,31 @@
+----
+--The best is to go to the following site to following the installation instructions:
+https://josm.openstreetmap.de/
+----
+--For ubuntu users with Trusty development version just follow the following steps in order:
+
+--1. Edit the sources.list file by running the following command in the terminal:
+sudo editor /etc/apt/sources.list
+
+--2. Add the following line into the sources.list file:
+deb http://josm.openstreetmap.de/apt trusty universe
+
+--3. To check the development version name, use the following command:
+lsb_release -c
+
+--4. Download and register the public key:
+wget -q https://josm.openstreetmap.de/josm-apt.key -O- | sudo apt-key add -
+
+--5. Update the repository:
+sudo apt-get update
+
+--6. If installing not for the first time, then run:
+sudo apt-get remove josm josm-plugins
+
+--7. Install the JOSM:
+sudo apt-get install josm
+----
+--In order to run the gui, run the following command from the terminal:
+josm
+
+
